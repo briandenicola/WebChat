@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WebChat">
+  <DataContextMoniker Name="/WebChatDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8b78e402-4636-4f97-9989-6accfd38dcea" absoluteBounds="0.75, 0.875, 2, 1.5891951497395833">
+      <DataClassMoniker Name="/WebChatDataContext/ChatRoom" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ae7ae6f-ba49-4a34-b71b-c13765ed2871" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce7dd3e3-fda0-4d59-a4e0-9df74dba51ab" absoluteBounds="3.5, 0.875, 2, 1.5891951497395833">
+      <DataClassMoniker Name="/WebChatDataContext/Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="141b08d5-0d10-4037-9207-11da15c6e99a" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.66959757486979); (3.5 : 1.66959757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebChatDataContext/ChatRoom/ChatRoom_Message" />
+      <nodes>
+        <classShapeMoniker Id="8b78e402-4636-4f97-9989-6accfd38dcea" />
+        <classShapeMoniker Id="ce7dd3e3-fda0-4d59-a4e0-9df74dba51ab" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e17adecd-d37e-4d61-81b4-d352ac8b47ca" absoluteBounds="1.5, 3.25, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/WebChatDataContext/LoggedInUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1ece79f-c76f-4484-a777-2493b7e723ad" absoluteBounds="1.5150000000000001, 3.71, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.125 : 2.46419514973958); (2.125 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WebChatDataContext/ChatRoom/ChatRoom_LoggedInUser" />
+      <nodes>
+        <classShapeMoniker Id="8b78e402-4636-4f97-9989-6accfd38dcea" />
+        <classShapeMoniker Id="e17adecd-d37e-4d61-81b4-d352ac8b47ca" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
